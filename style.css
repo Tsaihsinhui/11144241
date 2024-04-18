@@ -1,0 +1,157 @@
+body {
+    background-color: #E6E6F2;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #DCB5FF;
+    color: black;
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+nav {
+    background-color: #EBD3E8;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+nav a {
+    padding: 14px 16px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #cda8b8;
+    color: white;
+}
+
+footer {
+    background-color: #EBD3E8;
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    float: left;
+    width: 73%;
+}
+
+aside {
+    float: right;
+    width: 25%;
+}
+
+.card {
+    /*background-color: rgb(234, 121, 121);*/
+    padding: 20px;
+    margin: 20px 10px;
+    border-radius: 10px;
+
+    /*背景圖*/
+    background-image: url(img/backgrond/card_img.jpg);
+    background-size: cover;
+}
+
+/*方法1*/
+main::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*方法二*/
+.clearfix {
+    clear: both;
+}
+
+
+.square1 {
+    font-size: larger;
+    width: 200px;
+    height: 50px;
+    background: #95CACA;
+    display: block;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: .5s;
+}
+
+.square1:hover {
+    width: 500px;
+}
+
+.square2 {
+    font-size: larger;
+    width: 200px;
+    height: 50px;
+    background: #95CACA;
+    display: block;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: .5s;
+}
+
+.square2:hover {
+    width: 400px;
+}
+
+.square3 {
+    font-size: larger;
+    width: 200px;
+    height: 50px;
+    background: #95CACA;
+    display: block;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: .5s;
+}
+
+.square3:hover {
+    width: 500px;
+}
+
+.square4 {
+    font-size: larger;
+    width: 200px;
+    height: 50px;
+    background: #95CACA;
+    display: block;
+    transition-property: width;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-delay: .5s;
+}
+
+.square4:hover {
+    width: 400px;
+}
+
+@media screen and (max-width:800px) {
+
+    article,
+    asile {
+        width: 100px;
+        float: none;
+    }
+
+    .card {
+        padding: 15px;
+        margin: 15px;
+    }
+}
